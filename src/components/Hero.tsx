@@ -7,7 +7,7 @@ export default function Hero() {
 				<div className="flex relative [&>div]:whitespace-nowrap [&>div>h1]:leading-none [&>div>h1]:text-9xl [&>div>h1]:uppercase [&>div>h1]:font-black [&>div>h1]:[word-spacing:30px]">
 					<div className="animate-marquee">
 						<h1 className="">
-							<span className="bg-clip-text text-transparent bg-gradient-to-tr from-brand-red to-fuchsia-600">
+							<span className="bg-clip-text text-transparent bg-gradient-to-tr from-brand-red to-brand-fuchsia">
 								404{" "}
 							</span>
 							Exploración fallida.‏‏‎ ‎
