@@ -16,7 +16,7 @@ export default function Hero() {
 					<div className="animate-marquee2 absolute top-0">
 						<h1 className="">
 							<span className="bg-clip-text text-transparent bg-gradient-to-tr from-brand-red to-fuchsia-600">
-								404{" "}
+								{" "}404{" "}
 							</span>
 							Exploración fallida.‏‏‎ ‎
 						</h1>
