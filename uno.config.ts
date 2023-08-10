@@ -6,6 +6,7 @@ export default defineConfig({
 		colors: {
 			"brand-dark": "#08070C",
 			"brand-light": "#F9F9F6",
+			"brand-fuchsia": "#C33CAA",
 			"brand-red": "#A80202",
 			"brand-orange": "#F0641A",
 			"brand-green": "#71756F",
