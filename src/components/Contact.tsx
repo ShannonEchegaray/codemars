@@ -38,7 +38,7 @@ export default function Footer() {
 						<span className="text-brand-light">→</span>
 					</form>
 				</div>
-				<div className="grid grid-col-2 grid-row-2">
+				<div className="grid grid-col-2 grid-row-2 items-start justify-center">
 					<section className="row-span-1 grid grid-col-1 grid-row-5 gap-y-1 [&>a]:text-2xl">
 						{links.map((link) => (
 							<a
@@ -50,7 +50,9 @@ export default function Footer() {
 							</a>
 						))}
 					</section>
-          <section className="row-span-1"><h1>a ver ché</h1></section>
+					<section className="row-span-1">
+						<p>a ver ché, pa cuando el logo?</p>
+					</section>
 				</div>
 				<div className="col-span-1"></div>
 			</div>
