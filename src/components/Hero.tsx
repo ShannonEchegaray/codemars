@@ -1,36 +1,21 @@
-import Image from "next/image";
-
 export default function Hero() {
 	return (
-		<section className="flex flex-col py-16 h-screen">
-			<div className="relative">
-				<div className="flex relative [&>div]:whitespace-nowrap [&>div>h1]:leading-none [&>div>h1]:text-9xl [&>div>h1]:uppercase [&>div>h1]:font-black [&>div>h1]:[word-spacing:30px]">
-					<div className="animate-marquee">
-						<h1 className="">
-							<span className="bg-clip-text text-transparent bg-gradient-to-tr from-brand-red to-brand-fuchsia">
-								404{" "}
-							</span>
-							Exploración fallida.‏‏‎ ‎
-						</h1>
-					</div>
-					<div className="animate-marquee2 absolute top-0">
-						<h1 className="">
-							<span className="bg-clip-text text-transparent bg-gradient-to-tr from-brand-red to-fuchsia-600">
-								{" "}404{" "}
-							</span>
-							Exploración fallida.‏‏‎ ‎
-						</h1>
-					</div>
+		<div className="relative">
+			<div className="relative z-20 [&>*]:mx-auto pt-20 flex flex-col gap-y-4 items-center">
+				<h1 className="text-9xl font-black">CodeMars.Studio</h1>
+				<p className="font-light text-7xl text-center max-w-3xl">
+					Experienced Digital Agency Studio
+				</p>
+				<div className="flex items-center justify-center gap-x-4 w-full max-w-2xl my-8 mx-auto [&>a]:w-full [&>a]:bg-transparent [&>a]:outline [&>a]:outline-1 [&>a]:outline-brand-orange [&>a]:rounded-md [&>a]:py-3 [&>a]:px-4 [&>a]:uppercase">
+					<a href="" className="" target="_blank" rel="noopener noferrer">
+						Empezar
+					</a>
+					<a href="" className="" target="_blank" rel="noopener noferrer">
+						Sobre Nosotros
+					</a>
 				</div>
-				<Image
-					src="/heroimage.webp"
-					width={300}
-					height={300}
-					alt="Mars Planet image"
-					className="z-10 absolute top-12 right-48 drop-shadow drop-shadow-xl drop-shadow-color-white/5"
-				/>
-				<div className="z-20 absolute top-[3.4rem] right-[12.4rem] rounded-full w-[288px] h-[288px] bg-gradient-to-br from-black via-black/20 to-white/5"></div>
 			</div>
-		</section>
+			<div className="bg-brand-orange/70 w-4xl h-30 absolute z-10 inset-x-0 top-72 mx-auto blur-[10rem]"></div>
+		</div>
 	);
 }
