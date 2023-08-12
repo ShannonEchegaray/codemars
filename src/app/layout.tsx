@@ -8,7 +8,24 @@ const clashDisplay = localFont({
 
 export const metadata = {
 	title: "CodeMars | Inicio",
-	description: "Diseñando la web del futuro, hoy.",
+	description: "Diseñando la web del futuro hoy.",
+	viewport: {
+		width: 'device-width',
+		initialScale: 1,
+		maximumScale: 1,
+		viewportFit: 'cover',
+	},
+	themeColor: '#D54011',
+	twitter: {
+    card: 'summary_large_image',
+    title: 'CodeMars',
+    description: 'Diseñando la web del futuro hoy.',
+		site: '@CodeMarsStudio',
+    // siteId: '1467726470533754880',
+    creator: '@linuxmobileok',
+    // creatorId: '1467726470533754880',
+    images: ['https://nextjs.org/og.png'],
+  },
 };
 
 export default function RootLayout({
