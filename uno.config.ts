@@ -8,7 +8,7 @@ export default defineConfig({
 			"brand-light": "#F9F9F6",
 			"brand-fuchsia": "#C33CAA",
 			"brand-red": "#A80202",
-			"brand-orange": "#F0641A",
+			"brand-orange": "#D54011",
 			"brand-green": "#71756F",
 			"brand-gray": "#E0D7BC",
 		},
