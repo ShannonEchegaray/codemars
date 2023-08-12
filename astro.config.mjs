@@ -9,5 +9,9 @@ import UnoCSS from 'unocss/astro'
 export default defineConfig({
   integrations: [react(), tailwind(), mdx(), UnoCSS({
 		injectReset: true,
-	})]
+	})],
+	experimental: {
+		viewTransitions: true,
+		assets: true,
+	}
 });
