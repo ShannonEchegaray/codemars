@@ -24,6 +24,7 @@
     "@alexanderniebuhr/prettier-plugin-unocss": "^0.0.4",
     "@unocss/astro": "^0.55.0",
     "@unocss/reset": "^0.55.0",
+    "astro-icon": "^0.8.1",
     "prettier": "^3.0.1",
     "prettier-config-standard": "^7.0.0",
     "prettier-plugin-astro": "^0.11.0",

@@ -1,5 +1,7 @@
 ---
 import Head from '@components/Head.astro';
+import Header from '@components/Header.astro';
+
 interface Props {
 	title: string;
 	description: string;
@@ -33,7 +35,8 @@ const {
 		publishDate={publishDate}
 	/>
 	<body class='font-sans bg-mars-dark text-mars-light'>
-    <div class='flex items-center justify-center'>
+    <div class='flex flex-col items-center justify-center'>
+			<Header />
 		  <slot />
     </div>
 	</body>

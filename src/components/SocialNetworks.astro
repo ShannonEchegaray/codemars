@@ -1,0 +1,34 @@
+---
+import { Icon } from 'astro-icon'
+
+const socialUrl = [
+  {
+    name: 'twitter',
+    url: 'https://twitter.com/CodeMarsStudio',
+  },
+  {
+    name: 'github',
+    url: 'https://github.com/CodeMarsStudio',
+  },
+  {
+    name: 'instagram',
+    url: 'https://instagram.com/CodeMarsStudio',
+  },
+  {
+    name: 'twitch',
+    url: 'https://twitch.tv/CodeMarsStudio',
+  }
+]
+---
+
+<ul class='flex items-center justify-center gap-x-2 [&>li>a>svg]:w-5'>
+  {
+    socialUrl.map((social) => (
+      <li>
+        <a href={social.url} target='_blank' rel='noopener noreferrer'>
+          <Icon name={social.name} />
+        </a>
+      </li>
+    ))
+  }
+</ul>

@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets'
+const links = [
+  {
+    href: '/',
+    label: 'Inicio'
+  },
+  {
+    href: '/about',
+    label: 'Nosotros'
+  },
+  {
+    href: '/services',
+    label: 'Servicios'
+  },
+  {
+    href: '/blog',
+    label: 'Blog'
+  }
+]
+---
+
+<nav class='flex w-full'>
+  <Image
+    src='/headerlogo.png'
+    alt='Logo'
+    class='w-28'
+    width={130}
+    height={40}
+  />
+  <ul
+    class='grow w-full flex items-center justify-center gap-x-10 uppercase font-medium text-lg'
+  >
+    {
+      links.map((link) => {
+        return (
+          <li>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        )
+      })
+    }
+  </ul>
+</nav>
