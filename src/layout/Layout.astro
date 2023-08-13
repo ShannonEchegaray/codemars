@@ -1,6 +1,7 @@
 ---
 import Head from '@components/Head.astro';
 import Header from '@components/Header.astro';
+import DotCursor from '@components/DotCursor';
 
 interface Props {
 	title: string;
@@ -37,6 +38,7 @@ const {
 	<body class='font-sans bg-mars-dark text-mars-light'>
     <div class='flex flex-col items-center justify-center'>
 			<Header />
+			<DotCursor client:only />
 		  <slot />
     </div>
 	</body>
