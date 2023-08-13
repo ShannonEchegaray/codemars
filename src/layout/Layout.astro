@@ -1,0 +1,43 @@
+---
+import Head from '@components/Head.astro';
+import Header from '@components/Header.astro';
+
+interface Props {
+	title: string;
+	description: string;
+	ogImage?: {
+		src: string;
+		alt: string;
+	};
+	publishDate?: Date;
+}
+
+const {
+	title,
+	description,
+	ogImage = {
+		src: '/assets/og-image.png',
+		alt: 'Astro',
+	},
+	publishDate = new Date(),
+} = Astro.props
+
+---
+
+<!DOCTYPE html>
+<html
+	lang='es'
+	class='scroll-smooth overflow-x-hidden'>
+	<Head
+		title={title}
+		description={description}
+		ogImage={ogImage}
+		publishDate={publishDate}
+	/>
+	<body class='font-sans bg-mars-dark text-mars-light'>
+    <div class='flex flex-col items-center justify-center'>
+			<Header />
+		  <slot />
+    </div>
+	</body>
+</html>

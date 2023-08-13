@@ -1,16 +1,26 @@
-import { defineConfig, presetAttributify, presetWind } from "unocss";
+import {
+  defineConfig,
+  presetAttributify,
+  presetWind,
+  presetWebFonts
+} from 'unocss'
 
 export default defineConfig({
-	presets: [presetAttributify(), presetWind()],
-	theme: {
-		colors: {
-			"brand-dark": "#08070C",
-			"brand-light": "#F9F9F6",
-			"brand-fuchsia": "#C33CAA",
-			"brand-red": "#A80202",
-			"brand-orange": "#D54011",
-			"brand-green": "#71756F",
-			"brand-gray": "#E0D7BC",
-		},
-	},
-});
+  presets: [presetAttributify(), presetWind(), presetWebFonts({
+		provider: 'fontshare',
+		fonts: {
+			sans: 'Clash Display'
+		}
+	})],
+  theme: {
+    colors: {
+      'mars-dark': '#08070C',
+      'mars-light': '#F9F9F6',
+      'mars-fuchsia': '#C33CAA',
+      'mars-red': '#A80202',
+      'mars-orange': '#D54011',
+      'mars-green': '#71756F',
+      'mars-gray': '#E0D7BC'
+    }
+  },
+})
