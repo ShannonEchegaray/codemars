@@ -7,6 +7,6 @@
   background-color: #08070c;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(213, 64, 17, 0.4);
+  background: rgba(213, 64, 17, 1);
   border-radius: 6px;
 }
