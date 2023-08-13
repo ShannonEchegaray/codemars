@@ -5,10 +5,10 @@ import ErrMarquee from '@components/ErrMarquee'
 import ErrContact from '@components/ErrContact.astro'
 ---
 
-<Layout>
+<Layout title="404 - Page Not Found" description="Oops! The page you are looking for does not exist.">
   <section class='flex flex-col items-center justify-center pt-16'>
     <div class='relative'>
-			<ErrMarquee client:load />
+			<ErrMarquee client:only="react" />
       <Image
         src='/heroimage.webp'
         alt='Mars Planet image'
