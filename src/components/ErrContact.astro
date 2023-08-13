@@ -1,0 +1,69 @@
+---
+const links = [
+  {
+    name: 'Inicio',
+    slug: '/'
+  },
+  {
+    name: 'Contacto',
+    slug: 'contact'
+  },
+  {
+    name: 'About',
+    slug: 'about'
+  },
+  {
+    name: 'Blog',
+    slug: 'blog'
+  },
+  {
+    name: 'Servicios',
+    slug: 'services'
+  }
+]
+---
+
+<footer>
+  <div class='grid grid-cols-2 grid-row-2 max-w-5xl mx-auto py-28 mt-64'>
+    <div
+      class='col-span-1 w-full flex flex-col gap-y-8 [&>p]:font-light [&>p]:text-4xl max-w-md'
+    >
+      <h2 class='text-7xl'>Contactanos</h2>
+      <p>Suscribite a nuestro newletter</p>
+      <form class='flex gap-x-3 [&>*]:text-2xl [&>*]:text-mars-green'>
+        <input
+          type='email'
+          placeholder='Correo electrónico'
+          class='border-b border-mars-green placeholder:text-mars-green/60 py-3 px-5 focus:outline-none'
+          style={{ background: 'none' }}
+        />
+        <span class='text-mars-light'>→</span>
+      </form>
+    </div>
+    <div class='grid grid-col-2 grid-row-2 items-start justify-center'>
+      <section
+        class='row-span-1 grid grid-col-1 grid-row-5 gap-y-1 [&>a]:text-2xl'
+      >
+        {
+          links.map((link) => (
+            <a href={link.slug} class='text-mars-light hover:text-mars-orange'>
+              {link.name}
+            </a>
+          ))
+        }
+      </section>
+      <section class='row-span-1'>
+        <p>a ver ché, pa cuando el logo?</p>
+      </section>
+    </div>
+    <div class='col-span-1'></div>
+  </div>
+  <p class='max-w-6xl mx-auto text-center py-2'>
+    ©2023 CODEMARS All rights reserved. Use of this site constitutes acceptance
+    of our{' '}
+    <span class='hover:text-mars-orange'>User Agreement</span> and{' '}
+    <span class='hover:text-mars-orange'>
+      Privacy Policy and Cookie Statement
+    </span>
+  </p>
+</footer>
